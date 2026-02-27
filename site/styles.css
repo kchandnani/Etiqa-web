@@ -23,9 +23,9 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #0f1115;
+  background: var(--teal);
   color: #fff;
-  border: 1px solid #1f2937;
+  border: 1px solid #0c5163;
   border-radius: 999px;
   padding: 8px 10px;
   box-shadow: 0 12px 28px rgba(2, 6, 23, 0.2);
