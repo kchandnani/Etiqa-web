@@ -12,32 +12,56 @@ body {
   color: var(--ink);
   background: linear-gradient(#ffffff, var(--cloud));
 }
-.nav {
-  max-width: 1120px; margin: 0 auto; padding: 20px 24px;
-  display: flex; justify-content: space-between; align-items: center;
+.topbar {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 20px 24px 10px;
+  display: flex;
+  justify-content: center;
 }
-.brand-link {
+.capsule-nav {
   display: inline-flex;
   align-items: center;
+  gap: 8px;
+  background: #0f1115;
+  color: #fff;
+  border: 1px solid #1f2937;
+  border-radius: 999px;
+  padding: 8px 10px;
+  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.2);
+}
+.capsule-nav a {
+  color: #e5e7eb;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 999px;
 }
-.brand-word {
-  font-size: 44px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: .01em;
-  color: var(--teal);
+.capsule-nav a:hover {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
 }
-.hero-brand-mark-wrap {
-  margin-bottom: 8px;
+.capsule-logo {
+  width: 34px;
+  height: 34px;
+  padding: 0 !important;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d5db;
 }
-.hero-brand-mark {
-  width: 44px;
-  height: 44px;
+.capsule-logo img {
+  width: 22px;
+  height: 22px;
   display: block;
 }
-.nav nav { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end; align-items: center; }
-.nav nav a { color: var(--ink); text-decoration: none; font-weight: 600; }
+.capsule-contact {
+  background: #fff;
+  color: #111827 !important;
+  border: 1px solid #d1d5db;
+}
 .hero {
   max-width: 1120px; margin: 0 auto; padding: 28px 24px 40px;
   display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center;
@@ -65,9 +89,13 @@ footer { max-width: 1100px; margin: 10px auto 50px; padding: 0 24px; display: fl
 .legal-page h2 { margin-top: 24px; color: var(--teal); }
 .back { text-decoration: none; color: var(--teal); font-weight: 600; }
 @media (max-width: 900px) {
-  .nav { gap: 14px; }
-  .brand-word { font-size: 36px; }
-  .hero-brand-mark { width: 40px; height: 40px; }
+  .capsule-nav {
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+  }
+  .capsule-nav a { white-space: nowrap; }
   .hero { grid-template-columns: 1fr; }
   h1 { font-size: 42px; }
 }
