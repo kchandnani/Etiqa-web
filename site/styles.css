@@ -19,23 +19,12 @@ body {
 .brand-link {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
 }
-.brand-mark {
-  width: 42px;
-  height: 42px;
+.brand-lockup {
+  width: 148px;
+  height: auto;
   display: block;
-  flex: 0 0 auto;
-}
-.brand-word {
-  display: block;
-  font-size: 30px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  color: var(--teal);
-  transform: translateY(1px);
 }
 .nav nav { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end; align-items: center; }
 .nav nav a { color: var(--ink); text-decoration: none; font-weight: 600; }
@@ -67,8 +56,7 @@ footer { max-width: 1100px; margin: 10px auto 50px; padding: 0 24px; display: fl
 .back { text-decoration: none; color: var(--teal); font-weight: 600; }
 @media (max-width: 900px) {
   .nav { gap: 14px; }
-  .brand-mark { width: 36px; height: 36px; }
-  .brand-word { font-size: 26px; }
+  .brand-lockup { width: 128px; }
   .hero { grid-template-columns: 1fr; }
   h1 { font-size: 42px; }
 }
