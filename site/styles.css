@@ -42,20 +42,12 @@ body {
   background: rgba(255,255,255,0.08);
   color: #fff;
 }
-.capsule-logo {
-  width: 34px;
-  height: 34px;
-  padding: 0 !important;
-  background: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #d1d5db;
-}
-.capsule-logo img {
-  width: 22px;
-  height: 22px;
-  display: block;
+.capsule-brand {
+  font-weight: 700 !important;
+  letter-spacing: .01em;
+  color: #ffffff !important;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
 }
 .capsule-contact {
   background: #fff;
