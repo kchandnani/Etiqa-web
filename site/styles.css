@@ -26,13 +26,16 @@ body {
   width: 42px;
   height: 42px;
   display: block;
+  flex: 0 0 auto;
 }
 .brand-word {
+  display: block;
   font-size: 30px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0.01em;
   color: var(--teal);
+  transform: translateY(1px);
 }
 .nav nav { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end; align-items: center; }
 .nav nav a { color: var(--ink); text-decoration: none; font-weight: 600; }
