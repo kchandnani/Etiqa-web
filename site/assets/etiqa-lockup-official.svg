@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" role="img" aria-label="Etiqa">
+  <g transform="translate(20,16) scale(0.22)">
+    <circle cx="0" cy="0" r="140" fill="#FFFFFF" stroke="#0E5F74" stroke-width="26"/>
+    <rect x="90" y="96" width="170" height="40" rx="20" transform="rotate(45 90 96)" fill="#0E5F74"/>
+    <g fill="#8FB9A1">
+      <circle cx="-72" cy="-86" r="7"/><circle cx="-49" cy="-102" r="7"/><circle cx="-23" cy="-111" r="7"/>
+      <circle cx="4" cy="-112" r="7"/><circle cx="31" cy="-106" r="7"/><circle cx="55" cy="-92" r="7"/>
+      <circle cx="94" cy="12" r="7"/><circle cx="90" cy="39" r="7"/><circle cx="79" cy="64" r="7"/>
+      <circle cx="61" cy="84" r="7"/><circle cx="37" cy="98" r="7"/><circle cx="11" cy="105" r="7"/>
+      <circle cx="-16" cy="106" r="7"/><circle cx="-42" cy="101" r="7"/>
+    </g>
+    <g transform="translate(-6,10) rotate(34)">
+      <path d="M 0 -76 C 28 -24, 32 30, 0 94 C -32 30, -28 -24, 0 -76 Z" fill="#F2A21C"/>
+      <path d="M -6 -8 L 10 -24 M -10 20 L 8 6" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+      <path d="M 4 -78 C 16 -98, 34 -110, 54 -114 C 48 -94, 34 -78, 16 -66 Z" fill="#8FB9A1"/>
+      <path d="M -2 -79 C -12 -96, -28 -106, -44 -110 C -40 -92, -27 -78, -10 -67 Z" fill="#8FB9A1"/>
+    </g>
+    <path d="M 40 60 L 58 78 L 88 46" fill="none" stroke="#8FB9A1" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(82,-90)">
+      <path d="M 0 30 C 0 12, 16 0, 36 0 C 56 0, 72 12, 72 30 C 72 48, 56 60, 36 60 C 16 60, 0 48, 0 30 Z" fill="#FFFFFF"/>
+      <path d="M 10 30 C 10 16, 22 8, 36 8 C 50 8, 62 16, 62 30 C 62 44, 50 52, 36 52 C 22 52, 10 44, 10 30 Z" fill="#8FB9A1"/>
+      <path d="M 20 38 C 30 28, 40 20, 50 16" fill="none" stroke="#8FB9A1" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="120" y="80" fill="#0E5F74"
+        font-family="Poppins, Nunito, Avenir Next, Arial Rounded MT Bold, Segoe UI, Arial, sans-serif"
+        font-size="58" font-weight="700" letter-spacing="0.4">etiqa</text>
+</svg>
