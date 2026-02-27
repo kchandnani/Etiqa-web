@@ -21,9 +21,19 @@ body {
   align-items: center;
   text-decoration: none;
 }
-.brand-lockup {
-  width: 230px;
-  height: auto;
+.brand-word {
+  font-size: 44px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: .01em;
+  color: var(--teal);
+}
+.hero-brand-mark-wrap {
+  margin-bottom: 8px;
+}
+.hero-brand-mark {
+  width: 44px;
+  height: 44px;
   display: block;
 }
 .nav nav { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end; align-items: center; }
@@ -56,7 +66,8 @@ footer { max-width: 1100px; margin: 10px auto 50px; padding: 0 24px; display: fl
 .back { text-decoration: none; color: var(--teal); font-weight: 600; }
 @media (max-width: 900px) {
   .nav { gap: 14px; }
-  .brand-lockup { width: 182px; }
+  .brand-word { font-size: 36px; }
+  .hero-brand-mark { width: 40px; height: 40px; }
   .hero { grid-template-columns: 1fr; }
   h1 { font-size: 42px; }
 }
