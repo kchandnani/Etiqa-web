@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etiqa — Know What You're Really Eating</title>
+<meta name="description" content="Etiqa scores any grocery product A through F based on real nutrition data. Built for Panama. Search, understand, choose better.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">
+    <img src="./assets/etiqa-lockup-official.svg" alt="Etiqa">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="#panama">Panama</a></li>
+    <li><a href="#investors">Press &amp; Investors</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#download" class="nav-cta">Get the app</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Now available in Panama</div>
+
+    <h1 class="hero-headline">
+      Finally know what's<br><em>actually</em> in your food.
+    </h1>
+
+    <p class="hero-sub">
+      Etiqa scores any grocery product — <strong>A through F, 0 to 100</strong> — based on real nutrition data. Search a product, understand why it scored that way, and find something better if you need to.
+      <br><br>
+      Built for Panama. <span class="bilingual-tag">&#127477;&#127462; EN / ES</span>
+    </p>
+
+    <div class="hero-actions">
+      <a href="#download" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M8 12l4 4 4-4M12 8v8"/></svg>
+        Download the app
+      </a>
+      <a href="#how" class="btn-secondary">See how it works &rarr;</a>
+    </div>
+
+    <p class="hero-disclaimer">Informational only. Not medical advice.</p>
+  </div>
+
+  <!-- Floating score card -->
+  <div class="hero-visual">
+    <div class="score-card">
+      <div class="score-card-label">Health Score</div>
+      <div class="score-card-product">Leche Semidescremada</div>
+      <div class="score-card-brand">Nevada &middot; 946ml</div>
+
+      <div class="score-ring-wrap">
+        <div class="score-ring">
+          <svg viewBox="0 0 80 80">
+            <circle class="score-ring-track" cx="40" cy="40" r="34"/>
+            <circle class="score-ring-fill" cx="40" cy="40" r="34"/>
+          </svg>
+          <div class="score-ring-label">
+            <div class="score-grade">A</div>
+            <div class="score-num">84</div>
+          </div>
+        </div>
+        <div class="score-meta">
+          <div class="score-meta-title">Overall score</div>
+          <div class="score-meta-val">84 / 100</div>
+        </div>
+      </div>
+
+      <div class="score-flags">
+        <div class="flag good"><div class="flag-dot good"></div>Low saturated fat (1.2g)</div>
+        <div class="flag good"><div class="flag-dot good"></div>Good source of protein</div>
+        <div class="flag warn"><div class="flag-dot warn"></div>Contains stabilizers (E452)</div>
+        <div class="flag bad"><div class="flag-dot bad"></div>Ultra-processed — NOVA 4</div>
+      </div>
+
+      <div class="alt-chip">&#10024; See 3 better alternatives &rarr;</div>
+    </div>
+
+    <div class="score-card-2">
+      <div class="mini-ring">
+        <svg viewBox="0 0 44 44">
+          <circle class="score-ring-track" cx="22" cy="22" r="18" stroke-width="5"/>
+          <circle class="score-ring-track mini-ring-fill" cx="22" cy="22" r="18" stroke-width="5"/>
+        </svg>
+        <div class="mini-ring-label">
+          <div class="mini-grade">D</div>
+        </div>
+      </div>
+      <div class="mini-info">
+        <div class="mini-name">Cereal Azucarado</div>
+        <div class="mini-brand">MarcaLocal &middot; 500g</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="section-inner">
+    <div class="section-tag">How it works</div>
+    <h2 class="section-title">Three steps to a<br><em>clearer</em> grocery run.</h2>
+
+    <div class="how-grid">
+      <div class="how-steps">
+        <div class="how-step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <div class="step-title">Search any product</div>
+            <div class="step-body">Type a product name, brand, or category. Search in English or Spanish — Etiqa understands both. Our database covers 50,000+ products including local Panamanian brands.</div>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <div class="step-title">Understand the score</div>
+            <div class="step-body">Every score comes with a plain-language explanation — what helped, what hurt, and which specific nutrients to pay attention to. No black boxes.</div>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <div class="step-title">Find something better</div>
+            <div class="step-body">When a product scores poorly, Etiqa surfaces pre-ranked alternatives in the same category. Same convenience, better choice.</div>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <div class="step-title">Track your progress</div>
+            <div class="step-body">Over time, Etiqa shows how your choices are trending. Your personal health score — not just individual products — improves week by week.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="how-preview">
+        <div class="search-bar">
+          <span class="search-icon">&#128269;</span>
+          <span class="search-text">leche nevada</span>
+          <span class="search-lang">ES / EN</span>
+        </div>
+        <div class="product-result">
+          <div class="result-icon">&#129371;</div>
+          <div class="result-info">
+            <div class="result-name">Leche Semidescremada</div>
+            <div class="result-brand">Nevada &middot; 946ml</div>
+          </div>
+          <div class="result-grade a">A</div>
+        </div>
+        <div class="product-result">
+          <div class="result-icon">&#129371;</div>
+          <div class="result-info">
+            <div class="result-name">Leche Entera Fortif.</div>
+            <div class="result-brand">Nevada &middot; 946ml</div>
+          </div>
+          <div class="result-grade c">C</div>
+        </div>
+        <div class="product-result">
+          <div class="result-icon">&#129479;</div>
+          <div class="result-info">
+            <div class="result-name">Leche con Chocolate</div>
+            <div class="result-brand">Nevada &middot; 200ml</div>
+          </div>
+          <div class="result-grade d">D</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission" id="mission">
+  <div class="mission-inner">
+    <div>
+      <div class="section-tag">Our mission</div>
+      <h2 class="section-title">Food companies know more about your groceries than you do.<br><em>We're changing that.</em></h2>
+      <p class="section-body" style="margin-top: 20px;">
+        Nutrition labels exist but they're designed to confuse. Ingredient lists are buried in fine print. Etiqa translates all of it into a single, honest score — built on adapted Nutri-Score v2 methodology, not brand relationships.
+        <br><br>
+        We don't accept advertising. We don't take money from food brands. Our only job is to help you make a better choice.
+      </p>
+    </div>
+
+    <div class="mission-stat-grid">
+      <div class="stat-card">
+        <div class="stat-num">50<span>K+</span></div>
+        <div class="stat-label">Products in the database at launch</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">A–<span>F</span></div>
+        <div class="stat-label">Simple letter grades anyone can understand</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">0<span>%</span></div>
+        <div class="stat-label">Brand influence on any score, ever</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">v<span>2</span></div>
+        <div class="stat-label">Nutri-Score v2 adapted methodology</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PANAMA -->
+<section class="panama" id="panama">
+  <div class="panama-inner">
+    <div class="panama-header">
+      <div>
+        <div class="section-tag">Why Panama</div>
+        <h2 class="section-title">The first food health app built <em>for here.</em></h2>
+      </div>
+      <div>
+        <p class="section-body" style="margin-top: 8px;">
+          Global apps like Yuka scan millions of products — but search for Nevada Leche or a product from Super 99 and you'll find nothing. Etiqa was built Panama-first, with local brand coverage, Spanish-first search, and data sourced from the stores you actually shop at.
+        </p>
+      </div>
+    </div>
+
+    <div class="panama-cards">
+      <div class="panama-card">
+        <span class="panama-card-icon">&#127978;</span>
+        <div class="panama-card-title">Local brand coverage</div>
+        <div class="panama-card-body">Nevada, local dairies, Panamanian snacks — products found at El Rey, Riba Smith, and S&uacute;per 99 are in the database from day one.</div>
+      </div>
+      <div class="panama-card">
+        <span class="panama-card-icon">&#127760;</span>
+        <div class="panama-card-title">Fully bilingual</div>
+        <div class="panama-card-body">Search in Spanish or English. Every score, explanation, and alternative is available in both languages with full parity.</div>
+      </div>
+      <div class="panama-card">
+        <span class="panama-card-icon">&#128200;</span>
+        <div class="panama-card-title">LATAM expansion next</div>
+        <div class="panama-card-body">Panama is the starting point. Costa Rica, Colombia, and the broader LATAM market follow as our data pipeline grows.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS & INVESTORS -->
+<section class="investors" id="investors">
+  <div class="investors-inner">
+    <div class="section-tag">Press &amp; Investors</div>
+    <h2 class="section-title">Built to <em>last.</em></h2>
+    <p class="section-body" style="margin-top: 16px;">Etiqa is an early-stage consumer health company with a defensible data moat and a clear path to LATAM-wide distribution. Here's the case.</p>
+
+    <div class="traction-bar">
+      <div class="traction-item">
+        <div class="traction-val">50<span>K</span></div>
+        <div class="traction-label">Products at launch</div>
+      </div>
+      <div class="traction-divider"></div>
+      <div class="traction-item">
+        <div class="traction-val">1<span>st</span></div>
+        <div class="traction-label">Localized app in Panama</div>
+      </div>
+      <div class="traction-divider"></div>
+      <div class="traction-item">
+        <div class="traction-val">0<span>$</span></div>
+        <div class="traction-label">Brand advertising, ever</div>
+      </div>
+      <div class="traction-divider"></div>
+      <div class="traction-item">
+        <div class="traction-val">v<span>2</span></div>
+        <div class="traction-label">Nutri-Score methodology</div>
+      </div>
+    </div>
+
+    <div class="press-grid">
+      <div class="press-card">
+        <div class="press-card-title">The market opportunity</div>
+        <div class="press-card-body">No localized food health app exists for Panama or the broader LATAM consumer market. Yuka, Fooducate, and Oasis have essentially no coverage of local brands. Etiqa's Panama-first data pipeline is a barrier competitors cannot easily replicate.</div>
+        <a href="mailto:press@etiqahealth.com" class="press-card-link">Request deck &rarr;</a>
+      </div>
+      <div class="press-card">
+        <div class="press-card-title">Independent &amp; transparent</div>
+        <div class="press-card-body">Etiqa is independently funded and takes no money from food brands. Scores are computed algorithmically from public nutrition data. Our scoring methodology is published and open to scrutiny.</div>
+        <a href="#faq" class="press-card-link">Read the FAQ &rarr;</a>
+      </div>
+      <div class="press-card">
+        <div class="press-card-title">For press inquiries</div>
+        <div class="press-card-body">We're available for interviews, data partnerships, and editorial collaborations. Contact our team directly for press kit, screenshots, and founder availability.</div>
+        <a href="mailto:press@etiqahealth.com" class="press-card-link">press@etiqahealth.com &rarr;</a>
+      </div>
+      <div class="press-card">
+        <div class="press-card-title">For investors</div>
+        <div class="press-card-body">We're early stage, Panama-first, and actively seeking aligned capital. If you invest in LATAM consumer health or food tech, we'd like to talk. No cold pitches — just a direct conversation.</div>
+        <a href="mailto:invest@etiqahealth.com" class="press-card-link">invest@etiqahealth.com &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="download">
+  <div class="cta-inner">
+    <h2 class="cta-title">Your groceries,<br><em>demystified.</em></h2>
+    <p class="cta-sub">Download Etiqa and search your first product in under 30 seconds. Free to use. No scanning required.</p>
+    <div class="cta-buttons">
+      <a href="#" class="store-btn">
+        <span class="store-btn-icon">&#127822;</span>
+        <span class="store-btn-text">
+          <span class="store-btn-sub">Download on the</span>
+          <span class="store-btn-name">App Store</span>
+        </span>
+      </a>
+      <a href="#" class="store-btn">
+        <span class="store-btn-icon">&#9654;</span>
+        <span class="store-btn-text">
+          <span class="store-btn-sub">Get it on</span>
+          <span class="store-btn-name">Google Play</span>
+        </span>
+      </a>
+    </div>
+    <p class="cta-disclaimer">iOS and Android. Free download. Etiqa Plus available for advanced features.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="section-tag">FAQ</div>
+    <h2 class="section-title">Good questions.</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Is Etiqa medical advice? <span class="faq-toggle">+</span></div>
+        <div class="faq-a">No. Etiqa is an informational product-evaluation tool. Scores reflect nutritional data and established methodology — they are not diagnoses, medical recommendations, or a substitute for professional dietary guidance.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How are scores calculated? <span class="faq-toggle">+</span></div>
+        <div class="faq-a">Etiqa uses an adapted version of Nutri-Score v2 — a research-backed European food scoring system. Scores weigh negative factors (sugar, saturated fat, sodium, trans fat) against positive ones (fiber, protein, micronutrients) per 100g of product. No brand pays to influence their score.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if a product I search for is missing? <span class="faq-toggle">+</span></div>
+        <div class="faq-a">Our Panama database is actively growing. If a product is missing, it goes on our priority list for the next data update. You can also flag missing products directly in the app.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does Etiqa take money from food brands? <span class="faq-toggle">+</span></div>
+        <div class="faq-a">Never. Etiqa is funded by users (Etiqa Plus subscriptions) and aligned investors — not food companies. We have no commercial relationship with any brand in our database and no brand can pay to improve their score.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is it available in Spanish? <span class="faq-toggle">+</span></div>
+        <div class="faq-a">Yes — fully. Every screen, score explanation, ingredient flag, and alternative is available in both English and Spanish. The app detects your device language and defaults accordingly.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is Etiqa Plus? <span class="faq-toggle">+</span></div>
+        <div class="faq-a">Etiqa Plus is our premium tier. It unlocks dietary filters (gluten-free, no added sugar, high protein), your full health trend dashboard, unlimited bookmarks, and offline mode. The core search and scoring experience is always free.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="/" class="footer-logo">
+      <img src="./assets/etiqa-lockup-official.svg" alt="Etiqa">
+    </a>
+    <ul class="footer-links">
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="./privacy.html">Privacy</a></li>
+      <li><a href="./terms.html">Terms</a></li>
+      <li><a href="./disclaimer.html">Disclaimer</a></li>
+      <li><a href="mailto:press@etiqahealth.com">Press</a></li>
+      <li><a href="mailto:invest@etiqahealth.com">Investors</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+    <span class="footer-copy">&copy; 2026 Etiqa Health. Panama.</span>
+  </div>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // Nav scroll effect
+  window.addEventListener('scroll', () => {
+    document.querySelector('nav').style.background =
+      window.scrollY > 40
+        ? 'rgba(7, 20, 26, 0.97)'
+        : 'rgba(7, 20, 26, 0.85)';
+  });
+</script>
+
+</body>
+</html>
