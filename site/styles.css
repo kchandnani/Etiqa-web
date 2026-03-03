@@ -58,7 +58,7 @@ nav {
 }
 
 .nav-logo img {
-  height: 50px;
+  height: 36px;
   width: auto;
   display: block;
 }
@@ -935,7 +935,7 @@ footer {
 }
 
 .footer-logo img {
-  height: 18px;
+  height: 36px;
   width: auto;
   display: block;
 }
@@ -1055,7 +1055,15 @@ footer {
     border-bottom: 1px solid var(--border);
   }
   .nav-links li:last-child a { border-bottom: none; }
-  .nav-cta { display: inline-block !important; margin-top: 8px; text-align: center; }
+  .nav-cta {
+    display: block !important;
+    margin-top: 8px;
+    text-align: center;
+    width: 100%;
+    padding: 14px 20px !important;
+    border-radius: 10px !important;
+    box-sizing: border-box;
+  }
   .nav-toggle { display: block; }
   .hero { padding: 120px 24px 80px; }
   .hero-visual { display: none; }

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-16 -10 600 140" role="img" aria-label="Etiqa">
-  <g transform="translate(26,22) scale(0.22)">
+  <g transform="translate(26,57) scale(0.22)">
     <circle cx="0" cy="0" r="140" fill="#FFFFFF" stroke="#0E5F74" stroke-width="26"/>
     <rect x="90" y="96" width="170" height="40" rx="20" transform="rotate(45 90 96)" fill="#0E5F74"/>
     <g fill="#8FB9A1">
@@ -22,7 +22,7 @@
       <path d="M 20 38 C 30 28, 40 20, 50 16" fill="none" stroke="#8FB9A1" stroke-width="5" stroke-linecap="round"/>
     </g>
   </g>
-  <text x="120" y="25" fill="#0E5F74" dominant-baseline="central"
+  <text x="120" y="60" fill="#0E5F74" dominant-baseline="central"
         font-family="Poppins, Nunito, Avenir Next, Arial Rounded MT Bold, Segoe UI, Arial, sans-serif"
         font-size="58" font-weight="700" letter-spacing="0.4">etiqa</text>
 </svg>
