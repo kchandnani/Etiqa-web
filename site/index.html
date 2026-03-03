@@ -3,8 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Etiqa — Know What You're Really Eating</title>
-<meta name="description" content="Etiqa scores any grocery product A through F based on real nutrition data. Built for Panama. Search, understand, choose better.">
+<title>Etiqa — Know What You're Really Eating | Food Health Scores for Panama</title>
+<meta name="description" content="Etiqa scores any grocery product A through F, 0 to 100, based on real nutrition data. Search 50,000+ products, understand what's in your food, and find healthier alternatives. Built for Panama. Free on iOS and Android.">
+<meta name="keywords" content="Etiqa, food health score, grocery health app, Panama, nutrition score, Nutri-Score, food rating, healthy eating, grocery shopping, product scoring, food transparency, LATAM">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Etiqa Health">
+<meta name="theme-color" content="#0E5F74">
+<link rel="canonical" href="https://etiqahealth.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Etiqa">
+<meta property="og:title" content="Etiqa — Know What You're Really Eating">
+<meta property="og:description" content="Etiqa scores any grocery product A through F based on real nutrition data. Search 50,000+ products, understand what's in your food, and find healthier alternatives. Built for Panama.">
+<meta property="og:url" content="https://etiqahealth.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_PA">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Etiqa — Know What You're Really Eating">
+<meta name="twitter:description" content="Etiqa scores any grocery product A through F based on real nutrition data. Built for Panama. Free on iOS and Android.">
+
+<!-- Structured Data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Etiqa Health",
+  "url": "https://etiqahealth.com",
+  "description": "Etiqa scores grocery products A through F based on real nutrition data. Built for Panama.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "team@lirium.ai",
+    "contactType": "customer support"
+  },
+  "sameAs": []
+}
+</script>
+
+<!-- Structured Data: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Etiqa",
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "HealthApplication",
+  "description": "Etiqa scores any grocery product A through F, 0 to 100, based on real nutrition data. Search products, understand scores, and find healthier alternatives.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": ["en", "es"],
+  "availableLanguage": ["English", "Spanish"],
+  "countryOfOrigin": {
+    "@type": "Country",
+    "name": "Panama"
+  }
+}
+</script>
+
+<!-- Structured Data: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Etiqa medical advice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Etiqa is an informational product-evaluation tool. Scores reflect nutritional data and established methodology — they are not diagnoses, medical recommendations, or a substitute for professional dietary guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are scores calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Etiqa uses an adapted version of Nutri-Score v2 — a research-backed European food scoring system. Scores weigh negative factors (sugar, saturated fat, sodium, trans fat) against positive ones (fiber, protein, micronutrients) per 100g of product. No brand pays to influence their score."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a product I search for is missing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Panama database is actively growing. If a product is missing, it goes on our priority list for the next data update. You can also flag missing products directly in the app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Etiqa take money from food brands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Never. Etiqa is funded by users (Etiqa Plus subscriptions) and aligned investors — not food companies. We have no commercial relationship with any brand in our database and no brand can pay to improve their score."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it available in Spanish?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — fully. Every screen, score explanation, ingredient flag, and alternative is available in both English and Spanish. The app detects your device language and defaults accordingly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Etiqa Plus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Etiqa Plus is our premium tier. It unlocks dietary filters (gluten-free, no added sugar, high protein), your full health trend dashboard, unlimited bookmarks, and offline mode. The core search and scoring experience is always free."
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -19,13 +137,14 @@
     <img src="./assets/etiqa-lockup-official.svg" alt="Etiqa">
   </a>
   <ul class="nav-links">
-    <li><a href="#how">How it works</a></li>
-    <li><a href="#mission">Mission</a></li>
-    <li><a href="#panama">Panama</a></li>
-    <li><a href="#investors">Press &amp; Investors</a></li>
+    <li><a href="#how" data-en="How it works" data-es="C&oacute;mo funciona">How it works</a></li>
+    <li><a href="#mission" data-en="Mission" data-es="Misi&oacute;n">Mission</a></li>
+    <li><a href="#panama" data-en="Panama" data-es="Panam&aacute;">Panama</a></li>
+    <li><a href="#investors" data-en="Press &amp; Investors" data-es="Prensa e inversores">Press &amp; Investors</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#download" class="nav-cta">Get the app</a></li>
+    <li><a href="#download" class="nav-cta" data-en="Get the app" data-es="Descargar app">Get the app</a></li>
   </ul>
+  <button class="lang-toggle" aria-label="Switch language">ES</button>
   <button class="nav-toggle" aria-label="Menu">&#9776;</button>
 </nav>
 
@@ -35,14 +154,14 @@
   <div class="hero-grid"></div>
 
   <div class="hero-content">
-    <div class="hero-eyebrow">Now available in Panama</div>
+    <div class="hero-eyebrow" data-en="Now available in Panama" data-es="Ya disponible en Panam&aacute;">Now available in Panama</div>
 
-    <h1 class="hero-headline">
+    <h1 class="hero-headline" data-en="Finally know what's<br><em>actually</em> in your food." data-es="Por fin sab&eacute; qu&eacute; tiene<br><em>realmente</em> tu comida.">
       Finally know what's<br><em>actually</em> in your food.
     </h1>
 
-    <p class="hero-sub">
-      Etiqa scores any grocery product — <strong>A through F, 0 to 100</strong> — based on real nutrition data. Search a product, understand why it scored that way, and find something better if you need to.
+    <p class="hero-sub" data-en="Etiqa scores any grocery product &mdash; <strong>A through F, 0 to 100</strong> &mdash; based on real nutrition data. Search a product, understand why it scored that way, and find something better if you need to.<br><br>Built for Panama. <span class='bilingual-tag'>&#127477;&#127462; EN / ES</span>" data-es="Etiqa califica cualquier producto del supermercado &mdash; <strong>de la A a la F, de 0 a 100</strong> &mdash; con datos nutricionales reales. Busca un producto, entiende por qu&eacute; obtuvo esa puntuaci&oacute;n y encuentra algo mejor si lo necesitas.<br><br>Hecho para Panam&aacute;. <span class='bilingual-tag'>&#127477;&#127462; EN / ES</span>">
+      Etiqa scores any grocery product &mdash; <strong>A through F, 0 to 100</strong> &mdash; based on real nutrition data. Search a product, understand why it scored that way, and find something better if you need to.
       <br><br>
       Built for Panama. <span class="bilingual-tag">&#127477;&#127462; EN / ES</span>
     </p>
@@ -50,18 +169,18 @@
     <div class="hero-actions">
       <a href="#download" class="btn-primary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M8 12l4 4 4-4M12 8v8"/></svg>
-        Download the app
+        <span data-en="Download the app" data-es="Descargar la app">Download the app</span>
       </a>
-      <a href="#how" class="btn-secondary">See how it works &rarr;</a>
+      <a href="#how" class="btn-secondary" data-en="See how it works &rarr;" data-es="Ver c&oacute;mo funciona &rarr;">See how it works &rarr;</a>
     </div>
 
-    <p class="hero-disclaimer">Informational only. Not medical advice.</p>
+    <p class="hero-disclaimer" data-en="Informational only. Not medical advice." data-es="Solo informativo. No es consejo m&eacute;dico.">Informational only. Not medical advice.</p>
   </div>
 
   <!-- Floating score card -->
   <div class="hero-visual">
     <div class="score-card">
-      <div class="score-card-label">Health Score</div>
+      <div class="score-card-label" data-en="Health Score" data-es="Puntuaci&oacute;n de salud">Health Score</div>
       <div class="score-card-product">Leche Semidescremada</div>
       <div class="score-card-brand">Nevada &middot; 946ml</div>
 
@@ -77,19 +196,19 @@
           </div>
         </div>
         <div class="score-meta">
-          <div class="score-meta-title">Overall score</div>
+          <div class="score-meta-title" data-en="Overall score" data-es="Puntuaci&oacute;n general">Overall score</div>
           <div class="score-meta-val">84 / 100</div>
         </div>
       </div>
 
       <div class="score-flags">
-        <div class="flag good"><div class="flag-dot good"></div>Low saturated fat (1.2g)</div>
-        <div class="flag good"><div class="flag-dot good"></div>Good source of protein</div>
-        <div class="flag warn"><div class="flag-dot warn"></div>Contains stabilizers (E452)</div>
-        <div class="flag bad"><div class="flag-dot bad"></div>Ultra-processed — NOVA 4</div>
+        <div class="flag good"><div class="flag-dot good"></div><span data-en="Low saturated fat (1.2g)" data-es="Baja grasa saturada (1.2g)">Low saturated fat (1.2g)</span></div>
+        <div class="flag good"><div class="flag-dot good"></div><span data-en="Good source of protein" data-es="Buena fuente de prote&iacute;na">Good source of protein</span></div>
+        <div class="flag warn"><div class="flag-dot warn"></div><span data-en="Contains stabilizers (E452)" data-es="Contiene estabilizantes (E452)">Contains stabilizers (E452)</span></div>
+        <div class="flag bad"><div class="flag-dot bad"></div><span data-en="Ultra-processed &mdash; NOVA 4" data-es="Ultraprocesado &mdash; NOVA 4">Ultra-processed &mdash; NOVA 4</span></div>
       </div>
 
-      <div class="alt-chip">&#10024; See 3 better alternatives &rarr;</div>
+      <div class="alt-chip" data-en="&#10024; See 3 better alternatives &rarr;" data-es="&#10024; Ver 3 mejores alternativas &rarr;">&#10024; See 3 better alternatives &rarr;</div>
     </div>
 
     <div class="score-card-2">
@@ -113,37 +232,37 @@
 <!-- HOW IT WORKS -->
 <section class="how" id="how">
   <div class="section-inner">
-    <div class="section-tag">How it works</div>
-    <h2 class="section-title">Three steps to a<br><em>clearer</em> grocery run.</h2>
+    <div class="section-tag" data-en="How it works" data-es="C&oacute;mo funciona">How it works</div>
+    <h2 class="section-title" data-en="Three steps to a<br><em>clearer</em> grocery run." data-es="Tres pasos para una<br>compra m&aacute;s <em>clara.</em>">Three steps to a<br><em>clearer</em> grocery run.</h2>
 
     <div class="how-grid">
       <div class="how-steps">
         <div class="how-step">
           <div class="step-num">01</div>
           <div class="step-content">
-            <div class="step-title">Search any product</div>
-            <div class="step-body">Type a product name, brand, or category. Search in English or Spanish — Etiqa understands both. Our database covers 50,000+ products including local Panamanian brands.</div>
+            <div class="step-title" data-en="Search any product" data-es="Busca cualquier producto">Search any product</div>
+            <div class="step-body" data-en="Type a product name, brand, or category. Search in English or Spanish &mdash; Etiqa understands both. Our database covers 50,000+ products including local Panamanian brands." data-es="Escribe el nombre del producto, marca o categor&iacute;a. Busca en ingl&eacute;s o espa&ntilde;ol &mdash; Etiqa entiende ambos. Nuestra base de datos cubre m&aacute;s de 50,000 productos, incluyendo marcas locales paname&ntilde;as.">Type a product name, brand, or category. Search in English or Spanish &mdash; Etiqa understands both. Our database covers 50,000+ products including local Panamanian brands.</div>
           </div>
         </div>
         <div class="how-step">
           <div class="step-num">02</div>
           <div class="step-content">
-            <div class="step-title">Understand the score</div>
-            <div class="step-body">Every score comes with a plain-language explanation — what helped, what hurt, and which specific nutrients to pay attention to. No black boxes.</div>
+            <div class="step-title" data-en="Understand the score" data-es="Entiende la puntuaci&oacute;n">Understand the score</div>
+            <div class="step-body" data-en="Every score comes with a plain-language explanation &mdash; what helped, what hurt, and which specific nutrients to pay attention to. No black boxes." data-es="Cada puntuaci&oacute;n incluye una explicaci&oacute;n clara &mdash; qu&eacute; sum&oacute;, qu&eacute; rest&oacute; y qu&eacute; nutrientes espec&iacute;ficos debes tener en cuenta. Sin cajas negras.">Every score comes with a plain-language explanation &mdash; what helped, what hurt, and which specific nutrients to pay attention to. No black boxes.</div>
           </div>
         </div>
         <div class="how-step">
           <div class="step-num">03</div>
           <div class="step-content">
-            <div class="step-title">Find something better</div>
-            <div class="step-body">When a product scores poorly, Etiqa surfaces pre-ranked alternatives in the same category. Same convenience, better choice.</div>
+            <div class="step-title" data-en="Find something better" data-es="Encuentra algo mejor">Find something better</div>
+            <div class="step-body" data-en="When a product scores poorly, Etiqa surfaces pre-ranked alternatives in the same category. Same convenience, better choice." data-es="Cuando un producto tiene mala puntuaci&oacute;n, Etiqa muestra alternativas clasificadas en la misma categor&iacute;a. La misma conveniencia, mejor elecci&oacute;n.">When a product scores poorly, Etiqa surfaces pre-ranked alternatives in the same category. Same convenience, better choice.</div>
           </div>
         </div>
         <div class="how-step">
           <div class="step-num">04</div>
           <div class="step-content">
-            <div class="step-title">Track your progress</div>
-            <div class="step-body">Over time, Etiqa shows how your choices are trending. Your personal health score — not just individual products — improves week by week.</div>
+            <div class="step-title" data-en="Track your progress" data-es="Sigue tu progreso">Track your progress</div>
+            <div class="step-body" data-en="Over time, Etiqa shows how your choices are trending. Your personal health score &mdash; not just individual products &mdash; improves week by week." data-es="Con el tiempo, Etiqa te muestra c&oacute;mo evolucionan tus elecciones. Tu puntuaci&oacute;n de salud personal &mdash; no solo productos individuales &mdash; mejora semana a semana.">Over time, Etiqa shows how your choices are trending. Your personal health score &mdash; not just individual products &mdash; improves week by week.</div>
           </div>
         </div>
       </div>
@@ -187,10 +306,10 @@
 <section class="mission" id="mission">
   <div class="mission-inner">
     <div>
-      <div class="section-tag">Our mission</div>
-      <h2 class="section-title">Food companies know more about your groceries than you do.<br><em>We're changing that.</em></h2>
-      <p class="section-body" style="margin-top: 20px;">
-        Nutrition labels exist but they're designed to confuse. Ingredient lists are buried in fine print. Etiqa translates all of it into a single, honest score — built on adapted Nutri-Score v2 methodology, not brand relationships.
+      <div class="section-tag" data-en="Our mission" data-es="Nuestra misi&oacute;n">Our mission</div>
+      <h2 class="section-title" data-en="Food companies know more about your groceries than you do.<br><em>We're changing that.</em>" data-es="Las empresas de alimentos saben m&aacute;s de tus compras que t&uacute;.<br><em>Eso lo estamos cambiando.</em>">Food companies know more about your groceries than you do.<br><em>We're changing that.</em></h2>
+      <p class="section-body" style="margin-top: 20px;" data-en="Nutrition labels exist but they're designed to confuse. Ingredient lists are buried in fine print. Etiqa translates all of it into a single, honest score &mdash; built on adapted Nutri-Score v2 methodology, not brand relationships.<br><br>We don't accept advertising. We don't take money from food brands. Our only job is to help you make a better choice." data-es="Las etiquetas nutricionales existen, pero est&aacute;n dise&ntilde;adas para confundir. Las listas de ingredientes est&aacute;n enterradas en letra peque&ntilde;a. Etiqa traduce todo eso en una sola puntuaci&oacute;n honesta &mdash; basada en la metodolog&iacute;a adaptada Nutri-Score v2, no en relaciones con marcas.<br><br>No aceptamos publicidad. No recibimos dinero de marcas de alimentos. Nuestro &uacute;nico trabajo es ayudarte a tomar una mejor decisi&oacute;n.">
+        Nutrition labels exist but they're designed to confuse. Ingredient lists are buried in fine print. Etiqa translates all of it into a single, honest score &mdash; built on adapted Nutri-Score v2 methodology, not brand relationships.
         <br><br>
         We don't accept advertising. We don't take money from food brands. Our only job is to help you make a better choice.
       </p>
@@ -199,19 +318,19 @@
     <div class="mission-stat-grid">
       <div class="stat-card">
         <div class="stat-num">50<span>K+</span></div>
-        <div class="stat-label">Products in the database at launch</div>
+        <div class="stat-label" data-en="Products in the database at launch" data-es="Productos en la base de datos al lanzamiento">Products in the database at launch</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num">A–<span>F</span></div>
-        <div class="stat-label">Simple letter grades anyone can understand</div>
+        <div class="stat-num">A&ndash;<span>F</span></div>
+        <div class="stat-label" data-en="Simple letter grades anyone can understand" data-es="Calificaciones simples que cualquiera entiende">Simple letter grades anyone can understand</div>
       </div>
       <div class="stat-card">
         <div class="stat-num">0<span>%</span></div>
-        <div class="stat-label">Brand influence on any score, ever</div>
+        <div class="stat-label" data-en="Brand influence on any score, ever" data-es="Influencia de marcas en cualquier puntuaci&oacute;n, nunca">Brand influence on any score, ever</div>
       </div>
       <div class="stat-card">
         <div class="stat-num">v<span>2</span></div>
-        <div class="stat-label">Nutri-Score v2 adapted methodology</div>
+        <div class="stat-label" data-en="Nutri-Score v2 adapted methodology" data-es="Metodolog&iacute;a adaptada Nutri-Score v2">Nutri-Score v2 adapted methodology</div>
       </div>
     </div>
   </div>
@@ -222,12 +341,12 @@
   <div class="panama-inner">
     <div class="panama-header">
       <div>
-        <div class="section-tag">Why Panama</div>
-        <h2 class="section-title">The first food health app built <em>for here.</em></h2>
+        <div class="section-tag" data-en="Why Panama" data-es="Por qu&eacute; Panam&aacute;">Why Panama</div>
+        <h2 class="section-title" data-en="The first food health app built <em>for here.</em>" data-es="La primera app de salud alimentaria hecha <em>para aqu&iacute;.</em>">The first food health app built <em>for here.</em></h2>
       </div>
       <div>
-        <p class="section-body" style="margin-top: 8px;">
-          Global apps like Yuka scan millions of products — but search for Nevada Leche or a product from Super 99 and you'll find nothing. Etiqa was built Panama-first, with local brand coverage, Spanish-first search, and data sourced from the stores you actually shop at.
+        <p class="section-body" style="margin-top: 8px;" data-en="Global apps like Yuka scan millions of products &mdash; but search for Nevada Leche or a product from Super 99 and you'll find nothing. Etiqa was built Panama-first, with local brand coverage, Spanish-first search, and data sourced from the stores you actually shop at." data-es="Apps globales como Yuka escanean millones de productos &mdash; pero busca Nevada Leche o un producto de S&uacute;per 99 y no encontrar&aacute;s nada. Etiqa se construy&oacute; primero para Panam&aacute;, con cobertura de marcas locales, b&uacute;squeda en espa&ntilde;ol y datos de las tiendas donde realmente compras.">
+          Global apps like Yuka scan millions of products &mdash; but search for Nevada Leche or a product from Super 99 and you'll find nothing. Etiqa was built Panama-first, with local brand coverage, Spanish-first search, and data sourced from the stores you actually shop at.
         </p>
       </div>
     </div>
@@ -235,18 +354,18 @@
     <div class="panama-cards">
       <div class="panama-card">
         <span class="panama-card-icon">&#127978;</span>
-        <div class="panama-card-title">Local brand coverage</div>
-        <div class="panama-card-body">Nevada, local dairies, Panamanian snacks — products found at El Rey, Riba Smith, and S&uacute;per 99 are in the database from day one.</div>
+        <div class="panama-card-title" data-en="Local brand coverage" data-es="Cobertura de marcas locales">Local brand coverage</div>
+        <div class="panama-card-body" data-en="Nevada, local dairies, Panamanian snacks &mdash; products found at El Rey, Riba Smith, and S&uacute;per 99 are in the database from day one." data-es="Nevada, l&aacute;cteos locales, snacks paname&ntilde;os &mdash; productos que encuentras en El Rey, Riba Smith y S&uacute;per 99 est&aacute;n en la base de datos desde el primer d&iacute;a.">Nevada, local dairies, Panamanian snacks &mdash; products found at El Rey, Riba Smith, and S&uacute;per 99 are in the database from day one.</div>
       </div>
       <div class="panama-card">
         <span class="panama-card-icon">&#127760;</span>
-        <div class="panama-card-title">Fully bilingual</div>
-        <div class="panama-card-body">Search in Spanish or English. Every score, explanation, and alternative is available in both languages with full parity.</div>
+        <div class="panama-card-title" data-en="Fully bilingual" data-es="Totalmente biling&uuml;e">Fully bilingual</div>
+        <div class="panama-card-body" data-en="Search in Spanish or English. Every score, explanation, and alternative is available in both languages with full parity." data-es="Busca en espa&ntilde;ol o ingl&eacute;s. Cada puntuaci&oacute;n, explicaci&oacute;n y alternativa est&aacute; disponible en ambos idiomas con paridad total.">Search in Spanish or English. Every score, explanation, and alternative is available in both languages with full parity.</div>
       </div>
       <div class="panama-card">
         <span class="panama-card-icon">&#128200;</span>
-        <div class="panama-card-title">LATAM expansion next</div>
-        <div class="panama-card-body">Panama is the starting point. Costa Rica, Colombia, and the broader LATAM market follow as our data pipeline grows.</div>
+        <div class="panama-card-title" data-en="LATAM expansion next" data-es="Expansi&oacute;n LATAM a continuaci&oacute;n">LATAM expansion next</div>
+        <div class="panama-card-body" data-en="Panama is the starting point. Costa Rica, Colombia, and the broader LATAM market follow as our data pipeline grows." data-es="Panam&aacute; es el punto de partida. Costa Rica, Colombia y el mercado LATAM m&aacute;s amplio siguen a medida que crece nuestra base de datos.">Panama is the starting point. Costa Rica, Colombia, and the broader LATAM market follow as our data pipeline grows.</div>
       </div>
     </div>
   </div>
@@ -255,52 +374,52 @@
 <!-- PRESS & INVESTORS -->
 <section class="investors" id="investors">
   <div class="investors-inner">
-    <div class="section-tag">Press &amp; Investors</div>
-    <h2 class="section-title">Built to <em>last.</em></h2>
-    <p class="section-body" style="margin-top: 16px;">Etiqa is an early-stage consumer health company with a defensible data moat and a clear path to LATAM-wide distribution. Here's the case.</p>
+    <div class="section-tag" data-en="Press &amp; Investors" data-es="Prensa e inversores">Press &amp; Investors</div>
+    <h2 class="section-title" data-en="Built to <em>last.</em>" data-es="Hecho para <em>durar.</em>">Built to <em>last.</em></h2>
+    <p class="section-body" style="margin-top: 16px;" data-en="Etiqa is an early-stage consumer health company with a defensible data moat and a clear path to LATAM-wide distribution. Here's the case." data-es="Etiqa es una empresa de salud del consumidor en etapa temprana con una ventaja competitiva en datos y un camino claro hacia la distribuci&oacute;n en toda LATAM. Este es el caso.">Etiqa is an early-stage consumer health company with a defensible data moat and a clear path to LATAM-wide distribution. Here's the case.</p>
 
     <div class="traction-bar">
       <div class="traction-item">
         <div class="traction-val">50<span>K</span></div>
-        <div class="traction-label">Products at launch</div>
+        <div class="traction-label" data-en="Products at launch" data-es="Productos al lanzamiento">Products at launch</div>
       </div>
       <div class="traction-divider"></div>
       <div class="traction-item">
         <div class="traction-val">1<span>st</span></div>
-        <div class="traction-label">Localized app in Panama</div>
+        <div class="traction-label" data-en="Localized app in Panama" data-es="App localizada en Panam&aacute;">Localized app in Panama</div>
       </div>
       <div class="traction-divider"></div>
       <div class="traction-item">
         <div class="traction-val">0<span>$</span></div>
-        <div class="traction-label">Brand advertising, ever</div>
+        <div class="traction-label" data-en="Brand advertising, ever" data-es="Publicidad de marcas, nunca">Brand advertising, ever</div>
       </div>
       <div class="traction-divider"></div>
       <div class="traction-item">
         <div class="traction-val">v<span>2</span></div>
-        <div class="traction-label">Nutri-Score methodology</div>
+        <div class="traction-label" data-en="Nutri-Score methodology" data-es="Metodolog&iacute;a Nutri-Score">Nutri-Score methodology</div>
       </div>
     </div>
 
     <div class="press-grid">
       <div class="press-card">
-        <div class="press-card-title">The market opportunity</div>
-        <div class="press-card-body">No localized food health app exists for Panama or the broader LATAM consumer market. Yuka, Fooducate, and Oasis have essentially no coverage of local brands. Etiqa's Panama-first data pipeline is a barrier competitors cannot easily replicate.</div>
-        <a href="mailto:press@etiqahealth.com" class="press-card-link">Request deck &rarr;</a>
+        <div class="press-card-title" data-en="The market opportunity" data-es="La oportunidad de mercado">The market opportunity</div>
+        <div class="press-card-body" data-en="No localized food health app exists for Panama or the broader LATAM consumer market. Yuka, Fooducate, and Oasis have essentially no coverage of local brands. Etiqa's Panama-first data pipeline is a barrier competitors cannot easily replicate." data-es="No existe una app de salud alimentaria localizada para Panam&aacute; ni para el mercado de consumo LATAM m&aacute;s amplio. Yuka, Fooducate y Oasis no tienen cobertura de marcas locales. El pipeline de datos de Etiqa, enfocado en Panam&aacute;, es una barrera que los competidores no pueden replicar f&aacute;cilmente.">No localized food health app exists for Panama or the broader LATAM consumer market. Yuka, Fooducate, and Oasis have essentially no coverage of local brands. Etiqa's Panama-first data pipeline is a barrier competitors cannot easily replicate.</div>
+        <a href="mailto:team@lirium.ai" class="press-card-link" data-en="Request deck &rarr;" data-es="Solicitar presentaci&oacute;n &rarr;">Request deck &rarr;</a>
       </div>
       <div class="press-card">
-        <div class="press-card-title">Independent &amp; transparent</div>
-        <div class="press-card-body">Etiqa is independently funded and takes no money from food brands. Scores are computed algorithmically from public nutrition data. Our scoring methodology is published and open to scrutiny.</div>
-        <a href="#faq" class="press-card-link">Read the FAQ &rarr;</a>
+        <div class="press-card-title" data-en="Independent &amp; transparent" data-es="Independiente y transparente">Independent &amp; transparent</div>
+        <div class="press-card-body" data-en="Etiqa is independently funded and takes no money from food brands. Scores are computed algorithmically from public nutrition data. Our scoring methodology is published and open to scrutiny." data-es="Etiqa se financia de forma independiente y no recibe dinero de marcas de alimentos. Las puntuaciones se calculan algor&iacute;tmicamente a partir de datos nutricionales p&uacute;blicos. Nuestra metodolog&iacute;a de puntuaci&oacute;n es p&uacute;blica y abierta al escrutinio.">Etiqa is independently funded and takes no money from food brands. Scores are computed algorithmically from public nutrition data. Our scoring methodology is published and open to scrutiny.</div>
+        <a href="#faq" class="press-card-link" data-en="Read the FAQ &rarr;" data-es="Leer las preguntas frecuentes &rarr;">Read the FAQ &rarr;</a>
       </div>
       <div class="press-card">
-        <div class="press-card-title">For press inquiries</div>
-        <div class="press-card-body">We're available for interviews, data partnerships, and editorial collaborations. Contact our team directly for press kit, screenshots, and founder availability.</div>
-        <a href="mailto:press@etiqahealth.com" class="press-card-link">press@etiqahealth.com &rarr;</a>
+        <div class="press-card-title" data-en="For press inquiries" data-es="Consultas de prensa">For press inquiries</div>
+        <div class="press-card-body" data-en="We're available for interviews, data partnerships, and editorial collaborations. Contact our team directly for press kit, screenshots, and founder availability." data-es="Estamos disponibles para entrevistas, alianzas de datos y colaboraciones editoriales. Contacta directamente a nuestro equipo para kit de prensa, capturas de pantalla y disponibilidad del fundador.">We're available for interviews, data partnerships, and editorial collaborations. Contact our team directly for press kit, screenshots, and founder availability.</div>
+        <a href="mailto:team@lirium.ai" class="press-card-link">team@lirium.ai &rarr;</a>
       </div>
       <div class="press-card">
-        <div class="press-card-title">For investors</div>
-        <div class="press-card-body">We're early stage, Panama-first, and actively seeking aligned capital. If you invest in LATAM consumer health or food tech, we'd like to talk. No cold pitches — just a direct conversation.</div>
-        <a href="mailto:invest@etiqahealth.com" class="press-card-link">invest@etiqahealth.com &rarr;</a>
+        <div class="press-card-title" data-en="For investors" data-es="Para inversores">For investors</div>
+        <div class="press-card-body" data-en="We're early stage, Panama-first, and actively seeking aligned capital. If you invest in LATAM consumer health or food tech, we'd like to talk. No cold pitches &mdash; just a direct conversation." data-es="Estamos en etapa temprana, enfocados en Panam&aacute;, y buscamos capital alineado. Si inviertes en salud del consumidor o tecnolog&iacute;a alimentaria en LATAM, nos gustar&iacute;a hablar. Sin propuestas fr&iacute;as &mdash; solo una conversaci&oacute;n directa.">We're early stage, Panama-first, and actively seeking aligned capital. If you invest in LATAM consumer health or food tech, we'd like to talk. No cold pitches &mdash; just a direct conversation.</div>
+        <a href="mailto:team@lirium.ai" class="press-card-link">team@lirium.ai &rarr;</a>
       </div>
     </div>
   </div>
@@ -309,58 +428,58 @@
 <!-- CTA -->
 <section class="cta-section" id="download">
   <div class="cta-inner">
-    <h2 class="cta-title">Your groceries,<br><em>demystified.</em></h2>
-    <p class="cta-sub">Download Etiqa and search your first product in under 30 seconds. Free to use. No scanning required.</p>
+    <h2 class="cta-title" data-en="Your groceries,<br><em>demystified.</em>" data-es="Tus compras,<br><em>sin misterios.</em>">Your groceries,<br><em>demystified.</em></h2>
+    <p class="cta-sub" data-en="Download Etiqa and search your first product in under 30 seconds. Free to use. No scanning required." data-es="Descarga Etiqa y busca tu primer producto en menos de 30 segundos. Gratis. Sin necesidad de escanear.">Download Etiqa and search your first product in under 30 seconds. Free to use. No scanning required.</p>
     <div class="cta-buttons">
       <a href="#" class="store-btn">
         <span class="store-btn-icon">&#127822;</span>
         <span class="store-btn-text">
-          <span class="store-btn-sub">Download on the</span>
+          <span class="store-btn-sub" data-en="Download on the" data-es="Descargar en">Download on the</span>
           <span class="store-btn-name">App Store</span>
         </span>
       </a>
       <a href="#" class="store-btn">
         <span class="store-btn-icon">&#9654;</span>
         <span class="store-btn-text">
-          <span class="store-btn-sub">Get it on</span>
+          <span class="store-btn-sub" data-en="Get it on" data-es="Disp. en">Get it on</span>
           <span class="store-btn-name">Google Play</span>
         </span>
       </a>
     </div>
-    <p class="cta-disclaimer">iOS and Android. Free download. Etiqa Plus available for advanced features.</p>
+    <p class="cta-disclaimer" data-en="iOS and Android. Free download. Etiqa Plus available for advanced features." data-es="iOS y Android. Descarga gratuita. Etiqa Plus disponible para funciones avanzadas.">iOS and Android. Free download. Etiqa Plus available for advanced features.</p>
   </div>
 </section>
 
 <!-- FAQ -->
 <section class="faq" id="faq">
   <div class="faq-inner">
-    <div class="section-tag">FAQ</div>
-    <h2 class="section-title">Good questions.</h2>
+    <div class="section-tag" data-en="FAQ" data-es="Preguntas frecuentes">FAQ</div>
+    <h2 class="section-title" data-en="Good questions." data-es="Buenas preguntas.">Good questions.</h2>
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q">Is Etiqa medical advice? <span class="faq-toggle">+</span></div>
-        <div class="faq-a">No. Etiqa is an informational product-evaluation tool. Scores reflect nutritional data and established methodology — they are not diagnoses, medical recommendations, or a substitute for professional dietary guidance.</div>
+        <div class="faq-q"><span data-en="Is Etiqa medical advice?" data-es="&iquest;Etiqa es consejo m&eacute;dico?">Is Etiqa medical advice?</span> <span class="faq-toggle">+</span></div>
+        <div class="faq-a" data-en="No. Etiqa is an informational product-evaluation tool. Scores reflect nutritional data and established methodology &mdash; they are not diagnoses, medical recommendations, or a substitute for professional dietary guidance." data-es="No. Etiqa es una herramienta informativa de evaluaci&oacute;n de productos. Las puntuaciones reflejan datos nutricionales y metodolog&iacute;a establecida &mdash; no son diagn&oacute;sticos, recomendaciones m&eacute;dicas ni sustituyen la orientaci&oacute;n diet&eacute;tica profesional.">No. Etiqa is an informational product-evaluation tool. Scores reflect nutritional data and established methodology &mdash; they are not diagnoses, medical recommendations, or a substitute for professional dietary guidance.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How are scores calculated? <span class="faq-toggle">+</span></div>
-        <div class="faq-a">Etiqa uses an adapted version of Nutri-Score v2 — a research-backed European food scoring system. Scores weigh negative factors (sugar, saturated fat, sodium, trans fat) against positive ones (fiber, protein, micronutrients) per 100g of product. No brand pays to influence their score.</div>
+        <div class="faq-q"><span data-en="How are scores calculated?" data-es="&iquest;C&oacute;mo se calculan las puntuaciones?">How are scores calculated?</span> <span class="faq-toggle">+</span></div>
+        <div class="faq-a" data-en="Etiqa uses an adapted version of Nutri-Score v2 &mdash; a research-backed European food scoring system. Scores weigh negative factors (sugar, saturated fat, sodium, trans fat) against positive ones (fiber, protein, micronutrients) per 100g of product. No brand pays to influence their score." data-es="Etiqa utiliza una versi&oacute;n adaptada de Nutri-Score v2 &mdash; un sistema europeo de puntuaci&oacute;n alimentaria respaldado por investigaci&oacute;n. Las puntuaciones pesan factores negativos (az&uacute;car, grasa saturada, sodio, grasas trans) contra los positivos (fibra, prote&iacute;na, micronutrientes) por cada 100g de producto. Ninguna marca paga para influir en su puntuaci&oacute;n.">Etiqa uses an adapted version of Nutri-Score v2 &mdash; a research-backed European food scoring system. Scores weigh negative factors (sugar, saturated fat, sodium, trans fat) against positive ones (fiber, protein, micronutrients) per 100g of product. No brand pays to influence their score.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What if a product I search for is missing? <span class="faq-toggle">+</span></div>
-        <div class="faq-a">Our Panama database is actively growing. If a product is missing, it goes on our priority list for the next data update. You can also flag missing products directly in the app.</div>
+        <div class="faq-q"><span data-en="What if a product I search for is missing?" data-es="&iquest;Qu&eacute; pasa si falta un producto que busco?">What if a product I search for is missing?</span> <span class="faq-toggle">+</span></div>
+        <div class="faq-a" data-en="Our Panama database is actively growing. If a product is missing, it goes on our priority list for the next data update. You can also flag missing products directly in the app." data-es="Nuestra base de datos de Panam&aacute; est&aacute; creciendo activamente. Si falta un producto, entra en nuestra lista de prioridades para la pr&oacute;xima actualizaci&oacute;n. Tambi&eacute;n puedes reportar productos faltantes directamente en la app.">Our Panama database is actively growing. If a product is missing, it goes on our priority list for the next data update. You can also flag missing products directly in the app.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Does Etiqa take money from food brands? <span class="faq-toggle">+</span></div>
-        <div class="faq-a">Never. Etiqa is funded by users (Etiqa Plus subscriptions) and aligned investors — not food companies. We have no commercial relationship with any brand in our database and no brand can pay to improve their score.</div>
+        <div class="faq-q"><span data-en="Does Etiqa take money from food brands?" data-es="&iquest;Etiqa recibe dinero de marcas de alimentos?">Does Etiqa take money from food brands?</span> <span class="faq-toggle">+</span></div>
+        <div class="faq-a" data-en="Never. Etiqa is funded by users (Etiqa Plus subscriptions) and aligned investors &mdash; not food companies. We have no commercial relationship with any brand in our database and no brand can pay to improve their score." data-es="Nunca. Etiqa se financia con usuarios (suscripciones Etiqa Plus) e inversores alineados &mdash; no con empresas de alimentos. No tenemos relaci&oacute;n comercial con ninguna marca en nuestra base de datos y ninguna marca puede pagar para mejorar su puntuaci&oacute;n.">Never. Etiqa is funded by users (Etiqa Plus subscriptions) and aligned investors &mdash; not food companies. We have no commercial relationship with any brand in our database and no brand can pay to improve their score.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Is it available in Spanish? <span class="faq-toggle">+</span></div>
-        <div class="faq-a">Yes — fully. Every screen, score explanation, ingredient flag, and alternative is available in both English and Spanish. The app detects your device language and defaults accordingly.</div>
+        <div class="faq-q"><span data-en="Is it available in Spanish?" data-es="&iquest;Est&aacute; disponible en espa&ntilde;ol?">Is it available in Spanish?</span> <span class="faq-toggle">+</span></div>
+        <div class="faq-a" data-en="Yes &mdash; fully. Every screen, score explanation, ingredient flag, and alternative is available in both English and Spanish. The app detects your device language and defaults accordingly." data-es="S&iacute; &mdash; completamente. Cada pantalla, explicaci&oacute;n de puntuaci&oacute;n, indicador de ingredientes y alternativa est&aacute; disponible en ingl&eacute;s y espa&ntilde;ol. La app detecta el idioma de tu dispositivo y se ajusta autom&aacute;ticamente.">Yes &mdash; fully. Every screen, score explanation, ingredient flag, and alternative is available in both English and Spanish. The app detects your device language and defaults accordingly.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What is Etiqa Plus? <span class="faq-toggle">+</span></div>
-        <div class="faq-a">Etiqa Plus is our premium tier. It unlocks dietary filters (gluten-free, no added sugar, high protein), your full health trend dashboard, unlimited bookmarks, and offline mode. The core search and scoring experience is always free.</div>
+        <div class="faq-q"><span data-en="What is Etiqa Plus?" data-es="&iquest;Qu&eacute; es Etiqa Plus?">What is Etiqa Plus?</span> <span class="faq-toggle">+</span></div>
+        <div class="faq-a" data-en="Etiqa Plus is our premium tier. It unlocks dietary filters (gluten-free, no added sugar, high protein), your full health trend dashboard, unlimited bookmarks, and offline mode. The core search and scoring experience is always free." data-es="Etiqa Plus es nuestro nivel premium. Desbloquea filtros diet&eacute;ticos (sin gluten, sin az&uacute;car a&ntilde;adida, alto en prote&iacute;na), tu panel completo de tendencias de salud, marcadores ilimitados y modo sin conexi&oacute;n. La experiencia b&aacute;sica de b&uacute;squeda y puntuaci&oacute;n siempre es gratuita.">Etiqa Plus is our premium tier. It unlocks dietary filters (gluten-free, no added sugar, high protein), your full health trend dashboard, unlimited bookmarks, and offline mode. The core search and scoring experience is always free.</div>
       </div>
     </div>
   </div>
@@ -373,14 +492,14 @@
       <img src="./assets/etiqa-lockup-official.svg" alt="Etiqa">
     </a>
     <ul class="footer-links">
-      <li><a href="#how">How it works</a></li>
-      <li><a href="#mission">Mission</a></li>
-      <li><a href="./privacy.html">Privacy</a></li>
-      <li><a href="./terms.html">Terms</a></li>
-      <li><a href="./disclaimer.html">Disclaimer</a></li>
-      <li><a href="mailto:press@etiqahealth.com">Press</a></li>
-      <li><a href="mailto:invest@etiqahealth.com">Investors</a></li>
-      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="#how" data-en="How it works" data-es="C&oacute;mo funciona">How it works</a></li>
+      <li><a href="#mission" data-en="Mission" data-es="Misi&oacute;n">Mission</a></li>
+      <li><a href="./privacy.html" data-en="Privacy" data-es="Privacidad">Privacy</a></li>
+      <li><a href="./terms.html" data-en="Terms" data-es="T&eacute;rminos">Terms</a></li>
+      <li><a href="./disclaimer.html" data-en="Disclaimer" data-es="Aviso legal">Disclaimer</a></li>
+      <li><a href="mailto:team@lirium.ai" data-en="Press" data-es="Prensa">Press</a></li>
+      <li><a href="mailto:team@lirium.ai" data-en="Investors" data-es="Inversores">Investors</a></li>
+      <li><a href="./contact.html" data-en="Contact" data-es="Contacto">Contact</a></li>
     </ul>
     <span class="footer-copy">&copy; 2026 Etiqa Health. Panama.</span>
   </div>
@@ -403,6 +522,30 @@
         ? 'rgba(7, 20, 26, 0.97)'
         : 'rgba(7, 20, 26, 0.85)';
   });
+
+  // Language toggle
+  (function() {
+    const toggle = document.querySelector('.lang-toggle');
+    let lang = localStorage.getItem('etiqa-lang') || 'en';
+
+    function applyLang(l) {
+      lang = l;
+      document.documentElement.lang = l;
+      localStorage.setItem('etiqa-lang', l);
+      toggle.textContent = l === 'en' ? 'ES' : 'EN';
+
+      document.querySelectorAll('[data-en][data-es]').forEach(el => {
+        el.innerHTML = el.getAttribute('data-' + l);
+      });
+    }
+
+    toggle.addEventListener('click', () => {
+      applyLang(lang === 'en' ? 'es' : 'en');
+    });
+
+    // Apply saved language on load
+    if (lang !== 'en') applyLang(lang);
+  })();
 </script>
 
 </body>

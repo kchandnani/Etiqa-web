@@ -94,6 +94,26 @@ nav {
 
 .nav-cta:hover { background: var(--teal-bright) !important; color: var(--white) !important; }
 
+/* language toggle */
+.lang-toggle {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.lang-toggle:hover {
+  color: var(--ink);
+  border-color: var(--muted);
+}
+
 /* mobile menu */
 .nav-toggle {
   display: none;
