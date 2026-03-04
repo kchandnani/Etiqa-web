@@ -58,7 +58,7 @@ nav {
 }
 
 .nav-logo img {
-  height: 36px;
+  height: 45px;
   width: auto;
   display: block;
 }
@@ -1096,7 +1096,9 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  nav { padding: 16px 24px; flex-wrap: wrap; }
+  nav { padding: 16px 24px; flex-wrap: wrap; align-items: center; }
+  .nav-logo { display: inline-flex; align-items: center; }
+  .nav-logo img { height: 32px; }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -1121,7 +1123,8 @@ footer {
     border-radius: 10px !important;
     box-sizing: border-box;
   }
-  .nav-toggle { display: block; }
+  .nav-toggle { display: flex; align-items: center; }
+  .lang-toggle { display: inline-flex; align-items: center; }
   .hero { padding: 120px 24px 80px; }
   .hero-visual { display: none; }
   section { padding: 72px 24px; }
