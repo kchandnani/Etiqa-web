@@ -281,39 +281,72 @@ nav {
   animation: fadeUp 0.8s ease 0.7s forwards;
 }
 
-/* Hero 3-step strip */
-.hero-steps {
+/* Hero food product stack */
+.hero-food-stack {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 20px;
-  margin-bottom: 4px;
+  flex-direction: column;
+  gap: 8px;
   opacity: 0;
-  animation: fadeUp 0.8s ease 0.35s forwards;
+  animation: fadeUp 0.8s ease 0.5s forwards;
 }
 
-.hero-step-item {
+.food-tile {
   display: flex;
   align-items: center;
-  gap: 7px;
-  background: rgba(14, 95, 116, 0.12);
-  border: 1px solid rgba(14, 95, 116, 0.25);
-  padding: 7px 14px;
-  border-radius: 20px;
+  gap: 10px;
+  background: rgba(18, 35, 48, 0.85);
+  border: 1px solid rgba(26, 51, 68, 0.6);
+  padding: 10px 14px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  min-width: 200px;
+}
+
+.food-tile-emoji {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.food-tile-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.food-tile-name {
   font-size: 13px;
   font-weight: 500;
-  color: var(--teal-bright);
-  letter-spacing: 0.2px;
+  color: var(--ink);
+  white-space: nowrap;
 }
 
-.hero-step-icon {
-  font-size: 14px;
+.food-tile-brand {
+  font-size: 11px;
+  color: var(--muted);
 }
 
-.hero-step-arrow {
-  color: rgba(107, 138, 153, 0.4);
-  font-size: 14px;
+.food-tile-grade {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--white);
 }
+
+.grade-bg-a { background: #2ecc71; }
+.grade-bg-b { background: #8bc34a; }
+.grade-bg-c { background: #f1c40f; color: #333; }
+.grade-bg-d { background: #e67e22; }
+.grade-bg-f { background: #e74c3c; }
 
 /* Score card floating */
 .hero-visual {
@@ -1176,8 +1209,7 @@ footer {
     font-size: 15px;
   }
   .hero-visual { display: none; }
-  .hero-steps { gap: 8px; flex-wrap: wrap; }
-  .hero-step-item { padding: 6px 12px; font-size: 12px; }
+  .hero-food-stack { display: none; }
   section { padding: 72px 24px; }
   .how-grid,
   .mission-inner,
