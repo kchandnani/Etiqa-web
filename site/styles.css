@@ -1098,8 +1098,9 @@ footer {
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   nav { padding: 16px 24px; flex-wrap: wrap; align-items: center; }
-  .nav-logo { display: inline-flex; align-items: center; }
-  .nav-logo img { height: 32px; }
+  .nav-logo { display: inline-flex; align-items: center; flex: 1; }
+  .nav-logo img { height: 36px; }
+  .lang-toggle { margin-right: 12px; }
   .nav-links {
     display: none;
     flex-direction: column;
